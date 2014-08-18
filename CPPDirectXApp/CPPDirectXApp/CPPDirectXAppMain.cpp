@@ -26,7 +26,7 @@ CPPDirectXAppMain::CPPDirectXAppMain(const std::shared_ptr<DX::DeviceResources>&
 	m_timer.SetTargetElapsedSeconds(1.0 / 60);
 	*/
 
-	Windows::
+	
 }
 
 CPPDirectXAppMain::~CPPDirectXAppMain()

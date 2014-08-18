@@ -1,9 +1,12 @@
-#include "stdafx.h"
+/* oopLib */
+
+#include "pch.h"
 #include "Dog.h"
-#include <sstream>
-#include <iostream>
 
 using namespace std;
+using namespace oopLib;
+
+static int DogCount;
 
 Dog::Dog() : Dog("fido")
 {
@@ -15,12 +18,12 @@ Dog::Dog(string name)
 	age = 0;
 	Weight = 0;
 	BarkSound = "Woof!";
-	Dog::DogCount++;
+	DogCount++;
 }
 
-static int getDogCount()
+int Dog::GetDogCount()
 {
-	return Dog::DogCount;
+	return DogCount;
 }
 
 
@@ -36,6 +39,6 @@ string Dog::Bark()
 }
 
 string Dog::About()
-{	
+{
 	return Mammal::About() + " My Barksound sounds like " + Bark();
 }

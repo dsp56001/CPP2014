@@ -10,12 +10,10 @@ public:
 	~Dog();
 	virtual std::string Bark();
 	std::string About() override;
-	//static int DogCount;
 	std::string BarkSound;
+
+	static int DogCount;
 protected:
 	int age;
-
-	
-	
 };
 

@@ -1,0 +1,1 @@
+Needs to be chackeout to the /apps/myApps folder in the of_vx.x.x_vsrelease folder.

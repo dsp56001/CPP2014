@@ -7,8 +7,12 @@
 #include <iostream>
 #include <memory>
 
+int Dog::DogCount = 0;
+
 int _tmain(int argc, _TCHAR* argv[])
 {
+	
+	
 	Dog * d = new Dog();
 	std::shared_ptr<Dog> milo(new Dog("Milo"));
 	std::shared_ptr<Basenji> cheddar(new Basenji("Cheddar"));
