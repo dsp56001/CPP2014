@@ -8,7 +8,7 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	cout << "Hello World!";		//Say Hello World to Console
+	cout << "Hello World!" << endl;		//Say Hello World to Console
 	cin.get();					//Pause until a key is pressed
 
 	return 0;
