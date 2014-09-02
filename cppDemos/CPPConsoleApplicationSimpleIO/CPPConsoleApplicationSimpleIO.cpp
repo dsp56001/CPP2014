@@ -16,13 +16,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	string name;				//declare a string
 	int number;					//declare an int
 	cout << "What is your name? ";
-	cin >> name;				//get the a string from the console
+	cin >> name;				//get the a string from the console what happens if you type more than one word?
 	cout << "What is your favorite number? ";
-	cin >> number;				//get the a string from the console
+	cin >> number;				//get the a string from the console cin automagically casts to an int
 
 	cout << "Hello " << name << endl;
 	cout << "Your favorite number + 1 = " << number + 1 << endl;
-	cin.get();					//Pause until a key is pressed
+	cin.sync();
+	cin.ignore();
+	cin.get();			//Pause until a key is pressed
 
 	return 0;
 }
