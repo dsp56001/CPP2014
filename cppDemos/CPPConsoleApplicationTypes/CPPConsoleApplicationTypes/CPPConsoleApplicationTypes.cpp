@@ -39,14 +39,25 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 	//cast
-	int cast = (static_cast<int>(a));
+	double d = 3.1;
+	int i;
+	i = int(d); //c++ function cast
+	i = (int) d; //c implicit cast
+
+	int cast = (static_cast<int>(a));  //c++
 	auto acast = (static_cast<int>(b));
 	cout << "cast=" << cast << endl;
 	cout << "acast=" << acast << endl;
 
+	//char[] and string
+
 	char name[]{ 'j', 'e', 'f', 'f', '\0' };
 	char jeff [] = "jeff";
 	string strJeff = "jeff";
+
+	//string is an STL object that can replace c char[]
+	std::string cppName = "jeff";
+	//strings can be used like char[]'s
 
 	cout << "name[]=";
 	for (unsigned int i = 0; name[i]; i++)
@@ -64,7 +75,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << endl;
 	cout << "sizeof(jeff):" << sizeof(jeff) << endl;
 
-	cout << "strJeff[]=";
+	cout << "strJeff=";
 	for (unsigned int i = 0; strJeff[i]; i++)
 	{
 		cout << strJeff[i];
@@ -73,6 +84,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "strJeff.size():" << strJeff.size() << endl;
 	cout << "sizeof(strJeff.c_str()):" << sizeof(strJeff.c_str()) << endl;
 
+	
+
+
+
+	//intro to pointers
 	int * foo;			//int pointer 
 	foo = new int(5);	//new int at foo address
 	cout << "foo= " << *foo << endl;
