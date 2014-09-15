@@ -53,6 +53,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week3", "Week3", "{9C191966
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week4", "Week4", "{79FCAD13-C8B3-4E3D-B2D0-3C71169E6DF9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPConsoleApplicationStructPointers", "CPPConsoleApplicationStructPointers\CPPConsoleApplicationStructPointers.vcxproj", "{EFB44A02-4452-4CD7-95C6-6928C7F5CD13}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		oopLib\oopLib.Shared\oopLib.Shared.vcxitems*{fc87e784-9c8c-4885-8228-cd6faf79c1f4}*SharedItemsImports = 9
@@ -232,6 +234,14 @@ Global
 		{2473BFDC-14BF-40AB-8550-9A89B0BD31BF}.Release|Win32.ActiveCfg = Release|Win32
 		{2473BFDC-14BF-40AB-8550-9A89B0BD31BF}.Release|Win32.Build.0 = Release|Win32
 		{2473BFDC-14BF-40AB-8550-9A89B0BD31BF}.Release|x64.ActiveCfg = Release|Win32
+		{EFB44A02-4452-4CD7-95C6-6928C7F5CD13}.Debug|ARM.ActiveCfg = Debug|Win32
+		{EFB44A02-4452-4CD7-95C6-6928C7F5CD13}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EFB44A02-4452-4CD7-95C6-6928C7F5CD13}.Debug|Win32.Build.0 = Debug|Win32
+		{EFB44A02-4452-4CD7-95C6-6928C7F5CD13}.Debug|x64.ActiveCfg = Debug|Win32
+		{EFB44A02-4452-4CD7-95C6-6928C7F5CD13}.Release|ARM.ActiveCfg = Release|Win32
+		{EFB44A02-4452-4CD7-95C6-6928C7F5CD13}.Release|Win32.ActiveCfg = Release|Win32
+		{EFB44A02-4452-4CD7-95C6-6928C7F5CD13}.Release|Win32.Build.0 = Release|Win32
+		{EFB44A02-4452-4CD7-95C6-6928C7F5CD13}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -254,5 +264,6 @@ Global
 		{7BB357A2-9128-482B-A0B1-F5996D004AE5} = {6993FE59-6692-4AA0-A4A4-5B3C2856ABBD}
 		{09760B3B-FA9B-447F-A3CF-7C02CDA7BE10} = {4358E929-5EA5-49E1-80BF-F9253EEDE375}
 		{2473BFDC-14BF-40AB-8550-9A89B0BD31BF} = {4358E929-5EA5-49E1-80BF-F9253EEDE375}
+		{EFB44A02-4452-4CD7-95C6-6928C7F5CD13} = {9C191966-92EF-41CD-8223-3558505E757D}
 	EndGlobalSection
 EndGlobal

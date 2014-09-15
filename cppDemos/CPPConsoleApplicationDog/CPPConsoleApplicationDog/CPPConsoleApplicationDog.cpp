@@ -28,7 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 void testDog()
 {
-	//Standard pointer
+	//C pointer
 	Dog *fido = new Dog("fido");
 	std::cout << fido->About() << std::endl;
 	fido->Weight = 3;
@@ -40,6 +40,7 @@ void testDog()
 	std::unique_ptr<Dog> milo(new Dog("milo"));
 	std::cout << milo->About() << std::endl;
 
+	//shared pointer
 	std::shared_ptr<Dog> roover(new Dog("roover"));
 	std::cout << roover.get()->About() << std::endl;
 
