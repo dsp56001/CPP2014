@@ -79,6 +79,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	list<int> lnums{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 	
+	//c++11 iterator based for
+	for (int & itr : lnums)
+	{
+		cout << itr << endl;
+	}
 
 	return 0;
 }

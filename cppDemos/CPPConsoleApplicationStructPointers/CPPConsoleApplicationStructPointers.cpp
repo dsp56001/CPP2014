@@ -60,44 +60,27 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	//first time with C pointer
 	//unique pointer
-	CDog *  cmilo = new CDog();
-	cmilo->name = "c milo";
-	cmilo->age = 2;
-
-	aboutCDog(*cmilo);
-
-	//for scope
-	if (true)
-	{
-		//unique pointer
-		CDog *cspot = new CDog();
-		cspot = cmilo;
-
-		aboutCDog(*cspot);
-		delete cspot;
-	}
-	//no more spot
-	aboutCDog(*cmilo); //cmilo is not fine
-
-	//unique pointer
-	unique_ptr<CDog> milo (new CDog());
+	CDog *  milo = new CDog();
 	milo->name = "milo";
 	milo->age = 2;
-	
+
 	aboutCDog(*milo);
-
-	//for scope
-	if (true)
-	{
-		//unique pointer
-		unique_ptr<CDog> spot(new CDog());
-		*spot = *milo;
-
-		aboutCDog(*spot);
-	}
-	//no more spot
-	aboutCDog(*milo); //milo is fine
 	
+	CDog * milo2 = milo;
+	aboutCDog(*milo2);
+	//delete milo;		//try deleting the pointer here!!! ops
+	aboutCDog(*milo2);
+	
+	//unique pointer
+	unique_ptr<CDog> uspot(new CDog());
+	
+	
+	//shared pointer
+	shared_ptr<CDog> rover (new CDog());
+	rover->name = "milo";
+	rover->age = 2;
+	
+	aboutCDog(*rover);
 
 
 	cin.get();
