@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "oopLib.Shared\Dog.h"
+#include "../oopLib/oopLib.Shared/Dog.h"
 #include <memory>
 
 using namespace std;

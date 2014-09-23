@@ -39,8 +39,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 	//cast
-	double d = 3.1;
-	int i;
+	//double d = 3.1;
+	//int i;
 	i = int(d); //c++ function cast
 	i = (int) d; //c implicit cast
 

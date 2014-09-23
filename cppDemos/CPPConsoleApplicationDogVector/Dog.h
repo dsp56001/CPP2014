@@ -1,6 +1,5 @@
 #pragma once
 #include <string>
-
 class Dog
 {
 public:
@@ -11,7 +10,7 @@ protected:
 	int age;					//Private instance data memebers
 	int weight;
 public:
-	
+
 	std::string Name;
 	std::string BarkSound;
 	std::string About();
