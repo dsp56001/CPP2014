@@ -20,7 +20,7 @@ void Rocket::Launch()
 }
 void Rocket::Fly()
 {
-	//Rockets only fly after they are launced
+	//Rockets only fly after they are launched
 	if (!m_isLanuched)
 	{
 		return;
@@ -32,7 +32,7 @@ void Rocket::Fly()
 		this->m_FlyDistance += this->m_Speed;
 		this->m_FuelAmount -= m_Speed;
 	}
-	else // fly as far as fuel allows
+	else //fly as far as fuel allows
 	{
 		this->m_FuelAmount = 0;
 		this->m_FlyDistance += this->m_FuelAmount;

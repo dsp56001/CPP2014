@@ -9,6 +9,12 @@
       <elementDefinition Id="2245332f-12b8-4a14-8f6f-6cde1ee34545" />
       <body>Wooden Ducks Don't Quack or Fly	</body>
     </comment>
+    <comment Id="3fc9c9e0-2ff9-4399-818e-2fec75c10544">
+      <elementDefinition Id="52bc6b73-e981-4765-8257-eed20517c241" />
+      <body>Rockets need to be Launched before they can fly.
+
+Then they lly at speed if there is enough fuel. Rockets lose 1 fuel unit per speed. If there isn't enough fuel they fly as far as possible</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
