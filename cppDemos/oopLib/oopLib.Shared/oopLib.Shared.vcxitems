@@ -16,14 +16,12 @@
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)Dog.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Mammal.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)oopLib.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Dog.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Mammal.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)oopLib.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

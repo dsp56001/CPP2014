@@ -15,7 +15,13 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	std::cout << d->Bark() << std::endl;
 	std::cout << milo->Bark() << std::endl;
-	
+
+	std::cout << d->About() << std::endl;
+	std::cout << milo->About() << std::endl;
+
+
+	delete d;
+	cin.get();
 	return 0;
 }
 

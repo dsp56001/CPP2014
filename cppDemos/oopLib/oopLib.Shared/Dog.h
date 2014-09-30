@@ -1,6 +1,5 @@
 /* oopLib */
 
-#include "oopLib.h"
 #include "Mammal.h"
 
 namespace oopLib

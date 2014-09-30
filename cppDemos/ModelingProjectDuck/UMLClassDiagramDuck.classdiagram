@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="5ba6029a-ba3e-4592-aaca-8a88061a843e" name="UMLClassDiagramDuck" linkedPackageId="f62d301c-f3c5-47ff-8f8a-3c17b4ac97f9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="5f5cc362-a3bb-4573-a9fc-2e910ae67f14">
+      <elementDefinition Id="287b15d8-6d2b-4d7d-b1d4-ef6801072546" />
+      <body>Rubber Ducks Don't Fly</body>
+    </comment>
+    <comment Id="c79825c2-8419-49c7-9f12-34bd7f0462c6">
+      <elementDefinition Id="2245332f-12b8-4a14-8f6f-6cde1ee34545" />
+      <body>Wooden Ducks Don't Quack or Fly	</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a983dc89-a363-4c00-8d05-1e758ed1fc49" name="Duck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="64cccd6d-07b9-4e0f-859d-95e366b9511b" />
+        <ownedAttributesInternal>
+          <property Id="de1cd9e9-f2a3-47fe-bdfa-bf0049a35282" name="QuackSound" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1b68537b-e67e-41c2-9b70-abf8c27ec466" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="587b7255-52a7-4781-9c02-d98efaa380b7" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="be7c2eae-8a80-4cad-8976-886030ec8938" name="FlyDistance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a280f187-42e1-44a8-a6d5-c7f9cb046b7d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7cfac461-a8b4-427d-a9be-958c9e48b9e9" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="b5d28c28-8480-4985-92e3-18efacde3f76" name="SwimDistance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a8e1ce40-786f-4c7e-88ad-8466d204484e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bb250f0a-2622-4df3-b8da-fb81c4d6c8c4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="36507be6-923e-4396-a68b-c9e681b61dd3" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="369d3e53-f998-4068-937e-d6a1977ccaea" />
+          </operation>
+          <operation Id="eca10276-8cea-412e-a1bd-91b72e2c4c41" name="Fly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6b64dd9c-3f69-4a34-a6e2-f84c67c80e9d" />
+          </operation>
+          <operation Id="17334eba-b661-4346-accb-70ab50b06450" name="Swim" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="51cba66d-8024-48c5-9acb-2b818db779d7" />
+          </operation>
+          <operation Id="27fd0929-70cb-4348-bd42-63dba60cd178" name="getTotalDistance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c8cf4e9d-94ae-4bb5-99cd-a9379ca513c4" />
+          </operation>
+          <operation Id="2284a62f-96a5-4324-b1b3-99c468e65d56" name="getFlyDistance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0878ca92-20f9-46bb-9bbb-476e34fbee28" />
+          </operation>
+          <operation Id="fddb4ec1-b061-4870-9f85-41875cb7da00" name="getSwimDistance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="00c12375-08f7-4a99-99f7-20abaa407f5d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7cfac461-a8b4-427d-a9be-958c9e48b9e9" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="587b7255-52a7-4781-9c02-d98efaa380b7" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cb1c84e3-6c77-4688-80c1-99e73126c6e3" name="RubberDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="86a76f57-8def-48f0-bddb-3cffdac15479" />
+        <generalsInternal>
+          <generalization Id="390382bd-6862-455f-a32d-7125bae67b56" isSubstitutable="false">
+            <classMoniker Id="a983dc89-a363-4c00-8d05-1e758ed1fc49" LastKnownName="Duck" />
+            <elementDefinition Id="005d65c4-2d21-40be-9535-db8197e9ebe7" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="023aaed2-172f-4462-a711-6013ae8dd495" name="WoodenDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2895d3a2-1ce5-4121-87cc-d39275a6b555" />
+        <generalsInternal>
+          <generalization Id="bc31452b-1483-475d-bf76-0c7cbef9a491" isSubstitutable="false">
+            <classMoniker Id="a983dc89-a363-4c00-8d05-1e758ed1fc49" LastKnownName="Duck" />
+            <elementDefinition Id="52c1cb8e-9258-4ae6-b221-b766ffb14daf" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="bb250f0a-2622-4df3-b8da-fb81c4d6c8c4" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="583dbac2-4233-49e2-8b97-00b6320c9714" name="Rocket" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1968fd84-fa04-4283-9f59-4345038873dc" />
+        <ownedAttributesInternal>
+          <property Id="9891ab29-476a-4780-9a55-c0da54ef8301" name="FlyDistance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1730efae-fdd7-4841-9f3c-ddbbdf95f6c6" />
+          </property>
+          <property Id="715d4059-0521-4e6a-a8a4-4e09e8ccb1ea" name="FuelAmount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8d550740-bffc-4f61-90a9-194a2d7563c8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="10b9c46a-e00c-4a7d-9092-0f7e3f1f1164" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="b1dbc0ff-6b0b-4b8c-b024-49d2b8fb813d" name="isStarted" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8e582bb4-43b4-4558-8790-5c9b4af26709" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ad8481db-2b4c-4137-a2ae-7a90e1df05d8" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="f2e2ccbe-abbd-411c-9cc4-b6a20d18730e" name="Speed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3aaa2a72-6533-41ed-9c68-0d87e3fba5eb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b3fdc135-98ac-4c8c-8e76-a5bfdf716f0c" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ec925798-467f-4bfe-9ffb-055e834b6c1e" name="Fly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ab09a47a-d8fc-4555-8c35-1c052453d98b" />
+          </operation>
+          <operation Id="d2fa7654-e096-441a-bbad-2af82ec79585" name="Launch" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="293cdaa1-850c-431d-a763-8b23f2f1ec30" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fed2fb54-faf8-43dc-9928-35d03d1a4336" name="RocketDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="75ababe2-bcc3-470d-8384-d84a483f0240" />
+        <generalsInternal>
+          <generalization Id="adc9a6a2-1499-437e-a12e-542e2ed4293c" isSubstitutable="false">
+            <classMoniker Id="a983dc89-a363-4c00-8d05-1e758ed1fc49" LastKnownName="Duck" />
+            <elementDefinition Id="f2a7cac4-ec45-45ae-82a0-aee629e81ed1" />
+          </generalization>
+          <generalization Id="2c92860a-b066-4a05-b1c7-9844690b34e8" isSubstitutable="false">
+            <classMoniker Id="583dbac2-4233-49e2-8b97-00b6320c9714" LastKnownName="Rocket" />
+            <elementDefinition Id="922a5cec-1251-48ff-87d7-3b577b4c849a" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2bcf6ccc-e138-4c9f-a7b7-1fbfacba01bb" name="Mallard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4969f0bf-24e5-4e3c-8f37-feb4ea5667fd" />
+        <generalsInternal>
+          <generalization Id="d9147e3f-3ed2-4592-9ab6-92b50b2b6ef2" isSubstitutable="false">
+            <classMoniker Id="a983dc89-a363-4c00-8d05-1e758ed1fc49" LastKnownName="Duck" />
+            <elementDefinition Id="2daf0a70-99f4-4a0f-ab56-979a1aac57a3" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ad8481db-2b4c-4137-a2ae-7a90e1df05d8" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="10b9c46a-e00c-4a7d-9092-0f7e3f1f1164" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b3fdc135-98ac-4c8c-8e76-a5bfdf716f0c" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="f62d301c-f3c5-47ff-8f8a-3c17b4ac97f9" name="ModelingProjectDuck">
+    <elementDefinition Id="996bc39f-e674-450f-a2b2-4c7ec9613aa0" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0dcaaf1f-5678-49bd-90e5-c055bd01f0e0">
+        <profileInstance Id="c81d119f-160c-49de-a57f-72afa7b1d91d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4892284b-89a3-4ed8-9213-00bb55684acf">
+        <profileInstance Id="4b7ba095-641c-4a7b-b7d0-c647ba8c2202" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

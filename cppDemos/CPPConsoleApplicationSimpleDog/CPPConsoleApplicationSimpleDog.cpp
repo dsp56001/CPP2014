@@ -18,12 +18,14 @@ void aboutCDog(const CDog& dog);
 
 class CPPDog
 {
-public:
+
 	std::string name;
 	int age;
 public:
 	//constructor
-	CPPDog()
+	CPPDog() : 
+		name("fido"),
+		age(1)
 	{
 		std::cout << "CPPDog::CPPDog\n";
 	}
@@ -57,11 +59,11 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	//instance of class
 	CPPDog roover;
-	roover.name = "roover"; //set roover to public
-	roover.age = 1;
+	//roover.name = "roover"; //set roover to public
+	//roover.age = 1;
 
 	//instance of class
-	CPPDog spot{ "spot", 1 };
+	CPPDog * spot = new CPPDog();
 
 	//use constructror
 

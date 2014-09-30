@@ -12,12 +12,8 @@ Dog::Dog() : Dog("fido")
 {
 }
 
-Dog::Dog(string name)
+Dog::Dog(string name) : age(1), BarkSound("Woof!"), Mammal(name)
 {
-	Name = name;
-	age = 0;
-	Weight = 0;
-	BarkSound = "Woof!";
 	DogCount++;
 }
 
@@ -26,11 +22,10 @@ int Dog::GetDogCount()
 	return DogCount;
 }
 
-
 Dog::~Dog()
 {
 	//Nothing to destroy
-	std::cout << this->Name << " destructor" << std::endl;
+	std::cout << this->m_name << " destructor" << std::endl;
 }
 
 string Dog::Bark()
