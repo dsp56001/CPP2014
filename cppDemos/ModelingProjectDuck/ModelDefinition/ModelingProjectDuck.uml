@@ -327,6 +327,73 @@ Then they lly at speed if there is enough fuel. Rockets lose 1 fuel unit per spe
         </generalsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b3f7f43b-fe5a-40dd-be24-5276e814d84b"
+        name="Siri"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="6cbe089e-30f2-4516-97e5-81eced50e0f0"
+            name="QuackSound"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5a63b986-09e3-476d-898f-e6bb9f57555c"
+            name="Quack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8df5fadf-096c-49a6-9b46-54e486efa3ba"
+            name="Speak"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="51026482-c4f2-45f8-bd95-9409a61a14fc"
+        name="IWoodenRocketDuck"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7d0d24ad-4710-4a00-8f4e-8588e247c064"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2895d3a2-1ce5-4121-87cc-d39275a6b555"
+              LastKnownName="WoodenDuck"
+              LastKnownLocation="ModelingProjectDuck.uml" />
+          </generalization>
+          <generalization
+            Id="0299161c-8a7a-4735-98a9-cf89b575d3aa"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b3f7f43b-fe5a-40dd-be24-5276e814d84b"
+              LastKnownName="Siri"
+              LastKnownLocation="ModelingProjectDuck.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

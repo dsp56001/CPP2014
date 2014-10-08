@@ -176,6 +176,39 @@ Then they lly at speed if there is enough fuel. Rockets lose 1 fuel unit per spe
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3cf594f2-7d5c-45b5-8b43-7b2dfdeb8f5a" name="Siri" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b3f7f43b-fe5a-40dd-be24-5276e814d84b" />
+        <ownedAttributesInternal>
+          <property Id="ebd2d0b7-96a2-49f9-876a-d73fa5f8a82a" name="QuackSound" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6cbe089e-30f2-4516-97e5-81eced50e0f0" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="957e0b08-22b9-4cf7-b1a5-0d8a0616c997" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a63b986-09e3-476d-898f-e6bb9f57555c" />
+          </operation>
+          <operation Id="e300deba-4881-4add-8ae6-0022bcfde5be" name="Speak" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8df5fadf-096c-49a6-9b46-54e486efa3ba" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4b237914-c700-48cb-8de2-54930bc9f52f" name="IWoodenRocketDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="51026482-c4f2-45f8-bd95-9409a61a14fc" />
+        <generalsInternal>
+          <generalization Id="bcfbc7b2-d5c9-42a8-b547-b6ba7d2f89ed" isSubstitutable="false">
+            <classMoniker Id="023aaed2-172f-4462-a711-6013ae8dd495" LastKnownName="WoodenDuck" />
+            <elementDefinition Id="7d0d24ad-4710-4a00-8f4e-8588e247c064" />
+          </generalization>
+          <generalization Id="1b0e59f6-522c-4b15-8323-647c3eb0d052" isSubstitutable="false">
+            <classMoniker Id="3cf594f2-7d5c-45b5-8b43-7b2dfdeb8f5a" LastKnownName="Siri" />
+            <elementDefinition Id="0299161c-8a7a-4735-98a9-cf89b575d3aa" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="f62d301c-f3c5-47ff-8f8a-3c17b4ac97f9" name="ModelingProjectDuck">
     <elementDefinition Id="996bc39f-e674-450f-a2b2-4c7ec9613aa0" />
