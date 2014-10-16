@@ -21,10 +21,13 @@ Examples for c++ class
 #Week 4 Demos
 * Simple Dog Class https://github.com/dsp56001/CPP2014/blob/master/cppDemos/CPPConsoleApplicationSimpleDog/CPPConsoleApplicationSimpleDog.cpp
 * Vectpr Dog https://github.com/dsp56001/CPP2014/blob/master/cppDemos/CPPConsoleApplicationDogVector/CPPConsoleApplicationDogVector.cpp
+* 
 #Week 5 Demos
 * Inheritance Basenji https://github.com/dsp56001/CPP2014/tree/master/cppDemos/CPPConsoleApplicationBesenji/CPPConsoleApplicationBesenji
+
 #Week 6 Demos
-* Multtiple Inheritance https://github.com/dsp56001/CPP2014/tree/master/cppDemos/CPPConsoleApplicationMultipleInheritance
+* Multiple Inheritance https://github.com/dsp56001/CPP2014/tree/master/cppDemos/CPPConsoleApplicationMultipleInheritance
+
 #Week 7 Demos
 * Dog From Lib
 * SDL Demo
