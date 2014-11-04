@@ -18,5 +18,11 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+protected:
+		ofVec2f m_pos;
+		ofVec2f m_dir;
+		ofVec2f m_keyDir;
+
+		float m_elapsedGameTime;
 		
 };
