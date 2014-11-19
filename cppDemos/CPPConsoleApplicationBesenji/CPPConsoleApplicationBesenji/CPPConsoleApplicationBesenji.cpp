@@ -24,7 +24,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::cout << d->Bark() << std::endl;
 	std::cout << milo->Bark() << std::endl;
 	std::cout << cheddar->Bark() << std::endl;
-
+	std::cout << Dog::DogCount;
 	std::cin.get();
 	delete d;
 	return 0;

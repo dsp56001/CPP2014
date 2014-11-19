@@ -1,5 +1,7 @@
 // TestSDL.cpp : Defines the entry point for the console application.
+// uses SDL Library https://www.libsdl.org/download-2.0.php#source
 //
+// setup project for SDL http://www.programmersranch.com/2014/02/sdl2-setting-up-sdl2-in-visual-studio.html
 
 #include "stdafx.h"
 #include <iostream>

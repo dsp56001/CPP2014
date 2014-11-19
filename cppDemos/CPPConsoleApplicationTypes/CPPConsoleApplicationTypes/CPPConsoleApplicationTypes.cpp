@@ -2,15 +2,18 @@
 //
 
 #include "stdafx.h"
-#include <iostream>
+#include <iostream>	//brings in headers for cin and cout
 
+int global = 7; //global scoped int not a good idea try to avoid globals
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	using namespace std;
+	using namespace std;	//brings std namespace into local scope
 
+	short s = 1;
+	
 	//declare an int
-	int i;
+	int i;				//local (to main function) scopes integer
 	//assign an int
 	i = 7;
 	cout << "i= " << i << endl;
@@ -18,10 +21,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	int ii = 7; //declare and assign
 	cout << "ii= " << ii << endl;
 
+	if (true)
+	{
+		int iii = ii;	//block scoped variable
+	}
+
 	int iii{ 3 };	//new spec
 	cout << "iii= " << iii << endl;
 
-	char a;
+	char a;			//character type in c is really and int
 	a = 'a';
 	char b = 'b';
 	char c { 'c' }; //c++11
@@ -84,7 +92,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "strJeff.size():" << strJeff.size() << endl;
 	cout << "sizeof(strJeff.c_str()):" << sizeof(strJeff.c_str()) << endl;
 
-	
+	//floatint point numbers
+	float pi = 3.14f;						//note the postfix f
+	double d = 3.141592653589793238463;
 
 
 

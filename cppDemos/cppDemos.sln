@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cppDemos", "cppDemos\cppDemos.vcxproj", "{2AC6DF33-DAA6-4627-A089-D5825EA42AC3}"
 EndProject
@@ -72,6 +72,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplicationDogPound", "ConsoleApplicationDogPound\ConsoleApplicationDogPound.vcxproj", "{786F3660-CA2F-4B63-9FDF-A4DA87339DDF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestSDL", "TestSDL\TestSDL\TestSDL.vcxproj", "{7FF0B351-DFBD-4CB5-B504-030F4D07F5BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week10", "Week10", "{69EB97F2-1DB5-49ED-B691-A237EC8AFA92}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Direct2DPacMan", "DirectX\Direct2DPacMan\Direct2DPacMan\Direct2DPacMan.vcxproj", "{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -474,6 +478,20 @@ Global
 		{7FF0B351-DFBD-4CB5-B504-030F4D07F5BD}.Release|Win32.ActiveCfg = Release|Win32
 		{7FF0B351-DFBD-4CB5-B504-030F4D07F5BD}.Release|Win32.Build.0 = Release|Win32
 		{7FF0B351-DFBD-4CB5-B504-030F4D07F5BD}.Release|x64.ActiveCfg = Release|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Debug|ARM.ActiveCfg = Debug|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Debug|Win32.Build.0 = Debug|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Debug|x64.ActiveCfg = Debug|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Release|Any CPU.ActiveCfg = Release|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Release|ARM.ActiveCfg = Release|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Release|Win32.ActiveCfg = Release|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Release|Win32.Build.0 = Release|Win32
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -504,5 +522,6 @@ Global
 		{61866223-C7B5-409D-9C8D-B3A3162BD582} = {42C63585-0630-4CC9-B0A9-2DFD6690DF57}
 		{786F3660-CA2F-4B63-9FDF-A4DA87339DDF} = {42C63585-0630-4CC9-B0A9-2DFD6690DF57}
 		{7FF0B351-DFBD-4CB5-B504-030F4D07F5BD} = {BF06E127-E05D-4E5B-8639-F78393FA696C}
+		{ACDB8E69-B1E1-4437-8C02-9941E2238BC4} = {B3E43F08-BD59-4866-9682-B46EB93FEFF6}
 	EndGlobalSection
 EndGlobal
