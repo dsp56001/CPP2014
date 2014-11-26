@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;v=9A71937F861151DD0BF6CE096635D960" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Footer,0:HeaderFooterSprite,0:Footer.NonMtps,1:FooterSock,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;v=6F8B3AF3A5AD773353B7AA71E2A03CA5" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DirectXTK Simple Sample (Windows 8.1)</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>DirectXTK Simple Sample (Windows 8.1)</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            DirectX, Windows Store app
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Graphics and 3D, Windows Store app, Windows 8.1
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">11/24/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/DirectXTK-Simple-Sample-a0b6de36">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>The DirectX Tool Kit is&nbsp;a collection of helper classes for writing Direct3D 11 C&#43;&#43; code for Windows Store apps, Windows 8.x Win32 desktop applications, Windows Phone 8 applications, Windows 7 applications, and Windows Vista Direct3D 11.0 applications.</p>
+<p>This sample provides a simple demonstration of using the DirectXTK library in a Windows Store app for Windows 8.1 based on the VS 2013 Visual C&#43;&#43; Windows Store Direct3D app project template.</p>
+<p>For the latest version of DirectXTK, more detailed documentation, discussion forums, bug reports and feature requests, please visit the Codeplex site.</p>
+<p><a href="http://go.microsoft.com/fwlink/?LinkId=248929">http://go.microsoft.com/fwlink/?LinkId=248929</a></p>
+<p><em>This is the Windows Store app version of this sample and requires VS 2013 installed on a Windows 8.1 machine to build and run. There is a
+<a href="http://code.msdn.microsoft.com/DirectXTK-Simple-Win32-23db418a">Win32 desktop version</a> of this sample, a
+<a href="http://code.msdn.microsoft.com/DXUTDirectXTK-Simple-Win32-9cf797e9">Win32 desktop version</a> that uses DXUT, a
+<a href="http://code.msdn.microsoft.com/DirectXTK-Simple-Sample-608bc274">Windows Store for Windows 8</a> version of this sample, and one for
+<a href="http://code.msdn.microsoft.com/DirectXTK-Simple-Windows-80e6b591">Windows phone 8</a>.</em></p>
+<h1>Description</h1>
+<p>The SimpleSample demo shows how to link to the DirectXTK library and demonstrates the use of several DirectXTK components:</p>
+<ul>
+<li>SpriteBatch is used to render a Windows logo </li><li>SpriteFont and SpriteBatch are used to render text </li><li>GeometricPrimitive is used to render a teapot </li><li>PrimitiveBatch is used to render the grid </li><li>Model is used to render a mesh loaded from the legacy DirectX SDK <code>.SDKMESH</code> file &quot;Tiny.SDKMESH&quot;
+</li><li>Several textures are loaded using DDSTextureLoader </li><li>Plays a looping sound and timed 'one-shot' audio </li><li>Demonstrates a simple handling of audio device scenarios for <em>DirectX for Audio</em>
+</li></ul>
+<p>&nbsp;</p>
+<p><img alt="" id="75327" src="description/capture.jpg" width="640" height="400"></p>
+<h1>Windows RT</h1>
+<p>DirectXTK fully supports Windows Store apps on Windows RT (ARM) devices. However, the example
+<code>.SDKMESH</code> used in this sample uses 32-bit indices which requires Feature Level 9.2 or greater. For Feature Level 9.1 devices such as the
+<em>Microsoft Surface</em>, the sample will fail to run. You can resolve this by replacing the model with an
+<code>.SDKMESH</code> model file exported with 16-bit indices, changing to use a <code>
+.CMO</code> file, or simply commenting out the <code>model-&gt;Draw()</code> line in
+<code>Renderer.cpp</code></p>
+<h1>Coordinate system&nbsp;</h1>
+<p>This sample makes use of the right-handed coordinate system used in a number of Windows Store apps samples and assumed in systems such as XNA Game Studio.
+<code>.SDKMESH</code> files are exported assuming standard backface winding for left-handed coordinates, so this uses a clockwise winding which results in the textures being flipped in U. If wanting to make use of left-handed coordinates in this sample, change
+ the following source code in <code>Renderer.cpp</code>:</p>
+<ul>
+<li><code>XMMatrixLookAtLH</code> -&gt; <code>XMMatrixLookAtRH</code> </li><li><code>XMMatrixPerspectiveFovLH</code> -&gt; <code>XMMatrixPerspectiveFovRH</code>
+</li><li>Add a fourth parameter to <code>CreateTeapot</code> passing false </li><li>Add a fourth parameter for <code>CreateFromSDKMESH</code> pass true. </li><li>Change the Z positions of the objects by making them positive numbers. </li></ul>
+<h1>Version History</h1>
+<p>July 1, 2013 - Initial release&nbsp;</p>
+<p>October 28, 2013 - Updated for October 2013 release of DirectXTK and VS 2013 / Windows 8.1 RTM</p>
+<p>March 6, 2014 - Updated for <em>DirectXTK for Audio </em>and February 2014 release of DirectXTK</p>
+<p>July 24, 2014 - Updated for July 2014 release of DirectXTK</p>
+<p>November 24, 2014 - Updated for November 2014 release of DirectXTK</p>
+<h1>More Information</h1>
+<p><a href="http://blogs.msdn.com/b/chuckw/archive/2013/07/01/where-is-the-directx-sdk-2013-edition.aspx">Where is the DirectX SDK (2013 Edition)?</a></p>
+<p><a href="http://directxtk.codeplex.com/">DirectX Toolkit</a>&nbsp;</p>
+<p><a href="http://blogs.msdn.com/b/chuckw/archive/2013/12/25/directx-tool-kit-for-audio.aspx">DirectXTK for Audio</a></p>
+<p><a href="http://blogs.msdn.com/b/chuckw/">Games for Windows and DirectX SDK blog</a></p>
+<p><a href="http://blogs.msdn.com/b/shawnhar/">Shawn Hargreaves Blog</a></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
